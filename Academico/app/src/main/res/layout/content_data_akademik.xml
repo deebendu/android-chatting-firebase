@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/warnaLatar"
+    tools:context=".Activity.DataAkademikActivity"
+    tools:showIn="@layout/activity_data_akademik">
+
+    <LinearLayout
+        android:id="@+id/belumAdaData_dataAkadmik"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BELUM ADA DATA"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mahasiswa/i belum menginput data akademik"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_collapseMode="pin" />
+
+    <ProgressBar
+        android:id="@+id/PB_profil_akademik"
+        android:layout_marginTop="20dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp" />
+
+    <LinearLayout
+        android:id="@+id/viewUII"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/profilAkademik"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/TV_namaProfilMhs"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp" />
+
+
+
+        <TextView
+            android:id="@+id/TV_namaProfilMhs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Nama Mahasiswa Bimbingan"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/viewUII"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/TitleDataAkademik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewUII"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Data Akademik"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_data_akademik"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/TitleDataAkademik"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ListView
+            android:id="@+id/list_data_akademik"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

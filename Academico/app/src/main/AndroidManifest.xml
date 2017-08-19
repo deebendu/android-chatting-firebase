@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uii.academico">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.JadwalBimbinganActivity"
+            android:label="@string/title_activity_jadwal_bimbingan"
+            android:parentActivityName=".Activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.LihatMahasiswaBimbinganActivity"
+            android:label="@string/title_activity_lihat_mahasiswa_bimbingan"
+            android:parentActivityName=".Activity.JadwalBimbinganActivity" />
+        <activity
+            android:name=".Activity.DataAkademikActivity"
+            android:label="@string/title_activity_semester_ip"
+            android:parentActivityName=".Activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:parentActivityName=".Activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- ========== FCM SERVICE ========== -->
+
+        <service android:name=".FCM.FcmMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FCM.FcmInstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Activity.BuatJadwalActivity"
+            android:label="@string/title_activity_buat_jadwal" />
+        <activity
+            android:name=".Activity.RiwayatBimbinganActivity"
+            android:label="@string/title_activity_riwayat_bimbingan" />
+        <activity
+            android:name=".Activity.BuatDataActivity"
+            android:label="@string/title_activity_buat_data_akademik"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.DataMahasiswaActivity"
+            android:label="@string/title_activity_data_akademik" />
+        <activity
+            android:name=".Activity.PostInformasiActivity"
+            android:label="@string/title_activity_unggah_informasi" />
+        <activity
+            android:name=".Activity.ChatGroupActivity"
+            android:label="@string/title_activity_chat_group"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.DetailInformasiActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.HasilBimbinganActivity"
+            android:label="@string/title_activity_hasil_bimbingan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.KomentarAkademikActivity"
+            android:label="@string/title_activity_komentar_akademik"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.LogBimbinganActivity"
+            android:label="@string/title_activity_log_bimbingan"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

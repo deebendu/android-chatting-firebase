@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Academico</string>
+    <string name="action_logout">Log Out</string>
+
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Close Drawer</string>
+    <string name="title_activity_jadwal_bimbingan">Jadwal Bimbingan</string>
+    <string name="title_activity_lihat_mahasiswa_bimbingan">Semua Jadwal Bimbingan</string>
+    <string name="title_activity_semester_ip">Data Akademik</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_chat">Chat</string>
+    <string name="title_activity_buat_jadwal">Buat Jadwal Bimbingan</string>
+    <string name="title_activity_riwayat_bimbingan">Riwayat Bimbingan</string>
+    <string name="title_activity_buat_data_akademik">Buat Data Akademik</string>
+    <string name="title_activity_data_akademik">Data Akademik Mahasiswa</string>
+    <string name="title_activity_unggah_informasi">Unggah Informasi</string>
+    <string name="title_activity_chat_group">ChatGroupActivity</string>
+    <string name="title_activity_hasil_bimbingan">Keterangan Hasil Bimbingan</string>
+    <string name="title_activity_komentar_akademik">Komentar Data Akademik</string>
+    <string name="title_activity_log_bimbingan">LogBimbinganActivity</string>
+</resources>

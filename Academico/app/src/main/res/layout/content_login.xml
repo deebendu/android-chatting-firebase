@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.LoginActivity"
+    tools:showIn="@layout/activity_login"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/background"
+    android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:src="@drawable/academico"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/ET_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#55FFFFFF"
+            android:hint="Username"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/ET_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:background="#55FFFFFF"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/BT_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="MASUK"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="#AAFFAA00"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/PB_progress"/>
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+</RelativeLayout>

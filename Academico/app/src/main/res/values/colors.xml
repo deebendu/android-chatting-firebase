@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1E88E5</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#ffb007</color>
+
+    <!-- Tema Warna Buat Academico  -->
+    <color name="warnaLatar">#e3f2fd</color>
+
+    <color name="warnaNamaPengirim">#64b5f6</color>
+    <color name="warnaNamaSaya">#FF6F00</color>
+
+    <color name="warnaChatBubble">#1565c0</color>
+    <color name="warnaChatSaya">#ffc107</color>
+
+    <color name="warnaActionBar">#1976D2</color>
+
+    <color name="warnaKuningTua">#ffd16c</color>
+
+    <color name="warnaMerah">#f06292</color>
+    <color name="warnaHijauTua">#007b34</color>
+    <color name="warnaHijau">#2ecc71</color>
+    <color name="warnaHijauMuda">#b1e6c8</color>
+    <color name="warnaAbuabu">#707070</color>
+    <color name="warnaAbuabuMuda">#dbdbdb</color>
+
+    <color name="warnaBiruTua">#003066</color>
+    <color name="warnaBiruTua2">#004089</color>
+    <color name="warnaUngu">#AB47BC</color>
+    <color name="warnaUnguMuda">#CE93D8</color>
+
+
+    <color name="warnaKrem">#fff2d8</color>
+    <color name="warnaKuning">#ffe3a7</color>
+    <color name="warnaCoklat">#704b2a</color>
+    <color name="warnaCoklatMuda">#9c6430</color>
+    <color name="warnaCoklatTua">#54361a</color>
+    <color name="warnaBiruLangit">#9bcef9</color>
+    <color name="warnaBiruLangitTua">#6fbeff</color>
+    <color name="warnaBiru">#008dff</color>
+
+    <color name="colorAccentOnPressed">#df9800</color>
+</resources>
